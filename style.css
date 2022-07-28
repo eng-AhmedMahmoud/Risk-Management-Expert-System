@@ -1,0 +1,32 @@
+.popup-description {
+  display: none;
+}
+
+.warning:checked ~ label ~ .popup-description {
+  position: absolute;
+  background: black;
+  left: 0;
+  top: 0;
+  width: 100%;
+  min-height: 100%;
+  font-size: 1.5em;
+  padding-top: 1em;
+}
+
+[type="radio"]:checked ~ label ~ .popup-description {
+  display: block;
+}
+
+body {
+  background: url(./bg2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+h1 {
+  font-family: "Averia Sans Libre", cursive;
+}
+.lbl {
+  font-family: "Averia Sans Libre", cursive;
+}
